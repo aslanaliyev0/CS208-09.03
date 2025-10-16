@@ -1,29 +1,42 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
+h1 {
+  margin-top: -20px;
   margin-bottom: 20px;
 }
 
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: min(420px, 92vw);
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 14px;              /* subtle rounding like the mock */
+  padding: 28px 26px 22px;
+}
+h1 {
+  text-align: center;
+  color: #6b6f75;
+}
+#loginForm {
+  display: grid;
+  gap: 10px;
+}
+:root {
+  --border: #9aa0a6;
+  --text: #4a4a4a;
+  --bg: #f6f7f8;
+  --white: #ffffff;
 }
 
-th {
-  background-color: #f2f2f2;
-  font-weight: bold;
-}
+* { box-sizing: border-box; }
 
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tbody tr:hover {
-  background-color: #e9e9e9;
+input,
+button {
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  background: var(--white); 
 }
