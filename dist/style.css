@@ -13,7 +13,7 @@ body {
   width: min(420px, 92vw);
   background: var(--white);
   border: 2px solid var(--border);
-  border-radius: 14px;              /* subtle rounding like the mock */
+  border-radius: 14px;
   padding: 28px 26px 22px;
 }
 h1 {

@@ -4,7 +4,6 @@ function isStrongPassword(password) {
     if (!/[A-Z]/.test(password)) return false;
     return true;
 
-    
 }
 document.getElementById("loginForm").addEventListener("submit", function (e) {
   e.preventDefault();
